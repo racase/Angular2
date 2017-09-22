@@ -1,4 +1,4 @@
-import { RoutingModule } from './app.route';
+import { APP_ROUTING } from './app.route';
 import { SearchComponent } from './components/search/search.component'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -19,7 +19,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
