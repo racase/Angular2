@@ -43,7 +43,7 @@ import { AdmUsuariosComponent } from './components/adm-usuarios/adm-usuarios.com
       { path: "admAgua", component: AdmAguaComponent},
       { path: "admGases", component: AdmGasesComponent},
       { path: "admPaises", component: AdmPaisesComponent},
-      { path: "admUsuarios", component: AdmUsuariosComponent},
+      { path: "admUsuarios/:idUser", component: AdmUsuariosComponent},
       { path: "**", redirectTo:"calculadora"}
     ])
   ],
