@@ -1,3 +1,18 @@
-<p>Its works</p>
+<div class="col-md-4">
+    <div *ngFor="let serie of _listaSeries" style="padding-bottom: 5px">
+        <img class="resize" [src]="serie.image" alt="" (click)="showSerie(serie)">
+    </div>
+</div>
 
-<visor></visor>
+    
+<div class="col-md-8 floatRigth">
+    <div class="panel panel-default">
+        <div class="panel-heading"> {{_nameSelected}}</div>
+        <div class="panel-body"> {{_overViewSelected}}</div>
+    </div>  
+   
+</div>
+
+
+
+

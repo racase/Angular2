@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+img.resize {
+    width:250px; /* you can use % */
+    height: 250px;
+}
+
+.floatRigth{
+    z-index: 10;  
+    position: absolute;  
+    right: 0;  
+    top: 0;
+}
