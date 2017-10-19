@@ -3,3 +3,8 @@
 PLATAFORMA CURSOS --> https://elearning.iti.upv.es/chamilo/
 
 PORTAPAPELES COMPARTIDO --> http://piratepad.net/angular-iti
+
+Descargar plantillas de desarrollo
+
+INSPINIA
+wget -r -U Mozilla --no-parent http://webapplayers.com/inspinia_admin-v2.7.1/

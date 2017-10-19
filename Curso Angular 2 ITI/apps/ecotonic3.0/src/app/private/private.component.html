@@ -1,0 +1,187 @@
+
+<div class="m-grid m-grid--hor m-grid--root m-page">
+  <!-- begin::Header -->
+  <header class="m-grid__item		m-header "  data-minimize="minimize" data-minimize-offset="200" data-minimize-mobile-offset="200" >
+    <div class="m-header__top">
+      <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+        <div class="m-stack m-stack--ver m-stack--desktop">
+          <!-- begin::Brand -->
+          <div class="m-stack__item m-brand">
+            <div class="m-stack m-stack--ver m-stack--general m-stack--inline">
+              <div class="m-stack__item m-stack__item--middle m-brand__logo">
+                <a class="m-brand__logo-wrapper">
+                  <img alt="" src="assets/demo/demo2/media/img/logo/logo.png"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end::Brand -->
+          <!-- begin::Topbar -->
+          <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
+            <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
+              <div class="m-stack__item m-topbar__nav-wrapper">
+                <ul class="m-topbar__nav m-nav m-nav--inline">
+                  <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" data-dropdown-toggle="click">
+                    <a class="m-nav__link m-dropdown__toggle">
+                      <span class="m-topbar__userpic m--hide">
+                        <img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt=""/>
+                      </span>
+                      <span class="m-topbar__welcome">
+                        Hello,&nbsp;
+                      </span>
+                      <span class="m-topbar__username">
+                        {{ ususarioLogeado }}
+                      </span>
+                    </a>
+                  </li>
+                  <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" data-dropdown-toggle="click" data-dropdown-persistent="true">
+                    <a class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
+                      <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>
+                      <span class="m-nav__link-icon">
+                        <span class="m-nav__link-icon-wrapper">
+                          <i class="flaticon-music-2"></i>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  data-dropdown-toggle="click">
+                    <a class="m-nav__link m-dropdown__toggle">
+                      <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
+                      <span class="m-nav__link-icon">
+                        <span class="m-nav__link-icon-wrapper">
+                          <i class="flaticon-share"></i>
+                        </span>
+                      </span>
+                    </a>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end::Topbar -->
+        </div>
+      </div>
+    </div>
+    <div class="m-header__bottom">
+      <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+        <div class="m-stack m-stack--ver m-stack--desktop">
+          <!-- begin::Horizontal Menu -->
+          <div class="m-stack__item m-stack__item--middle m-stack__item--fluid">
+            <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-light " id="m_aside_header_menu_mobile_close_btn">
+              <i class="la la-close"></i>
+            </button>
+            <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light "  >
+              <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+                <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" aria-haspopup="true">
+                  <a class="m-menu__link m-menu__toggle">
+                    <span class="m-menu__item-here"></span>
+                    <span class="m-menu__link-text">
+                      Calculadoras
+                    </span>
+                    <i class="m-menu__hor-arrow la la-angle-down"></i>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                  </a>
+                  <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
+                    <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                    <ul class="m-menu__subnav">
+                      <li class="m-menu__item "  aria-haspopup="true">
+                        <a routerLink="mi-huella" class="m-menu__link ">
+                          <i class="m-menu__link-icon flaticon-diagram"></i>
+                          <span class="m-menu__link-title">
+                            <span class="m-menu__link-wrap">
+                              <span class="m-menu__link-text">
+                                Mi huella ecológica
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
+                        <a routerLink="mi-agua" class="m-menu__link m-menu__toggle">
+                          <i class="m-menu__link-icon flaticon-business"></i>
+                          <span class="m-menu__link-text">
+                            Mi consumo de agua
+                          </span>
+                          <i class="m-menu__hor-arrow la la-angle-right"></i>
+                          <i class="m-menu__ver-arrow la la-angle-right"></i>
+                        </a>
+                      </li>
+                      <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                        <a routerLink="mis-gases" class="m-menu__link ">
+                          <i class="m-menu__link-icon flaticon-users"></i>
+                          <span class="m-menu__link-text">
+                            Mi impacto gaseoso
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" aria-haspopup="true">
+                  <a class="m-menu__link m-menu__toggle">
+                    <span class="m-menu__item-here"></span>
+                    <span class="m-menu__link-text">
+                      Administración
+                    </span>
+                    <i class="m-menu__hor-arrow la la-angle-down"></i>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                  </a>
+                  <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
+                    <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                    <ul class="m-menu__subnav">
+                      <li class="m-menu__item "  aria-haspopup="true">
+                        <a routerLink="admin-agua" class="m-menu__link ">
+                          <i class="m-menu__link-icon flaticon-diagram"></i>
+                          <span class="m-menu__link-title">
+                            <span class="m-menu__link-wrap">
+                              <span class="m-menu__link-text">
+                                Agua
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
+                        <a routerLink="admin-gas" class="m-menu__link m-menu__toggle">
+                          <i class="m-menu__link-icon flaticon-business"></i>
+                          <span class="m-menu__link-text">
+                            Gases
+                          </span>
+                          <i class="m-menu__hor-arrow la la-angle-right"></i>
+                          <i class="m-menu__ver-arrow la la-angle-right"></i>
+                        </a>
+                      </li>
+                      <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                        <a routerLink="admin-paises" class="m-menu__link ">
+                          <i class="m-menu__link-icon flaticon-users"></i>
+                          <span class="m-menu__link-text">
+                            Países															
+                          </span>
+                        </a>
+                      </li>
+                      <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                        <a routerLink="admin-users"class="m-menu__link ">
+                          <i class="m-menu__link-icon flaticon-users"></i>
+                          <span class="m-menu__link-text">
+                            Usuarios															
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>						
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- begin::Body -->
+<div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor-desktop m-grid--desktop m-body"
+     style="margin-top: 20px; margin-right: 30px; margin-left: 30px;">
+  <router-outlet></router-outlet>
+</div>

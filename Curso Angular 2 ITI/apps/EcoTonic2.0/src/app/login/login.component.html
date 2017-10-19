@@ -1,0 +1,13 @@
+<form name="form"> 
+  <div class="container">
+    <input placeholder="Usuario" type="text" pInputText [(ngModel)]="user" [ngModelOptions]="{standalone: true}" required/>
+    <br>
+    <input placeholder="Password" type="password" pPassword [(ngModel)]="pass" [ngModelOptions]="{standalone: true}" required/>
+    <br> 
+    <br>
+    <button pButton type="button" (click)="doLogin()" label="Login"></button>  
+    <p-checkbox name="groupname" value="false" [(ngModel)]="remember"></p-checkbox>
+  </div>
+       
+    
+</form>

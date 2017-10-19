@@ -1,0 +1,12 @@
+<div style="margin-left: 40%; margin-top: 3%"> 
+  <div>
+    <input pInputText placeholder="Usuario" [(ngModel)]="usuarioIntroducido"
+           required="true" />
+  </div>
+  <div>
+    <input pInputText placeholder="Password" [(ngModel)]="passwordIntroducido" 
+           required="true"/>
+  </div>
+  <button (click)="doLogin()">Entrar</button>
+</div>
+  
