@@ -18,7 +18,7 @@ export class LoginService {
     login.remember = true;
 
     let stream : Observable<any> = this._http.post(
-      "http://localhost:8080/ecotonic/api/login",
+      "https://localhost:443/ecotonic/api/login",
       login);
 
     return stream;

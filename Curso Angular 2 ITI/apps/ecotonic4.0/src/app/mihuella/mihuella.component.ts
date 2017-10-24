@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./mihuella.component.css']
 })
 export class MihuellaComponent implements OnInit {
-  private huellasDeWS : HuellaUser[];
+  public huellasDeWS : HuellaUser[];
 
   constructor(private huellaService : HuellaService) { 
     this.loadHuellas();
