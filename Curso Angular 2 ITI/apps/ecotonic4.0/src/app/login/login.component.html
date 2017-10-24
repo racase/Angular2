@@ -1,0 +1,20 @@
+<div class="type">
+  <span>Eco</span>
+  <span>Tonifica</span>
+  <span>te</span>
+</div>
+
+
+<div class="login-body">
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form">
+        <input pInputText placeholder="Usuario" [(ngModel)]="usuarioIntroducido"
+            required="true" [ngModelOptions] = "{standalone: true}" />
+        <input pInputText placeholder="Password" [(ngModel)]="passwordIntroducido" 
+            required="true" type="password" [ngModelOptions] = "{standalone: true}" />
+        <button (click)="doLogin()">Entrar</button>
+      </form>
+    </div>
+  </div>
+</div>
