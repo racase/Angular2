@@ -18,17 +18,20 @@ export class LoginComponent implements OnInit {
     private loggedUserService : LoggedUserService) { }
 
   ngOnInit() {
+    if(localStorage.getItem('token') != null){
+      this.router.navigate(['private']);
+    }
   }
 
   doLogin() {
     console.log("Parametros recibidos " + this.usuarioIntroducido + "-" + this.passwordIntroducido);
-
     this.loginService.login(
       this.usuarioIntroducido,
       this.passwordIntroducido).subscribe((data) => {
         if(data.token) {
           this.loggedUserService.isLoggedIn = true;
           this.loggedUserService.token = data.token;
+          localStorage.setItem('token', data.token);
           this.loggedUserService.fullname = data.user.fullname;
           
           this.router.navigate(['private']);

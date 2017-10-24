@@ -16,7 +16,7 @@ export class AguaService {
      let observableResponse : Observable<Agua[]> 
      = this.http.
         get(
-          "https://localhost:443/ecotonic/api/agua",
+          "http://localhost:8080/ecotonic/api/agua",
           {
             headers: new HttpHeaders().set(
               'Authorization', 
