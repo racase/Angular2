@@ -1,0 +1,11 @@
+<div class="row" *ngFor="let it of _huellas">
+  <app-huella [huella]="it"></app-huella>
+</div>
+
+
+<div *ngFor="let a of _huellas" style="margin-top:100px">
+  <p>{{a.nombre}}</p>
+  <p>{{a.agua}}</p>
+  <p>{{a.electricidad}}</p>
+  <p>{{a.gas}}</p>
+</div>

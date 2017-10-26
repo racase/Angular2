@@ -1,0 +1,12 @@
+<p-dataTable [value]="agua" >
+    <p-column field="id" header="Id" 
+              [filter]="true"></p-column>
+    <p-column field="recurso" header="Recurso" 
+              [filter]="true" 
+              filterMatchMode="contains"></p-column>
+    <p-column field="consumoEnLitros" 
+              header="Consumo (En litros)" 
+              [filter]="true"></p-column>
+    <p-column field="tipo" header="Tipo" 
+              [filter]="true"></p-column>
+</p-dataTable>
